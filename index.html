@@ -1,82 +1,214 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="css/normalize.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <title>Qsoft</title>
-  </head>
-  <body>
-    <header class="page-header">
-      <div class="page-header__wrapper content">
-        <h1 class="visually-hidden">Qsoft</h1>
+<head>
+  <meta charset="utf-8">
+  <meta text-title="viewport" content="width=device-width, initial-scale=1">
+  <meta text-title="description" content="">
+  <title>Test-site2</title>
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/">
+  <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+      }
 
-        <a class="page-header__logo" href="#">
-          <img class="page-header__logo-img" src="img/qsoft-logo.svg" alt="digital-интегратор Qsoft">
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+  <link href="css/carousel.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body> 
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+      <div class="container container-fluid">
+        <a class="navbar-brand" href="#">
+          <img class="page-header__logo-img" src="img/Surf-Copy.svg" alt="лого">
         </a>
-
-        <form class="page-header__search" method="get" action="#">
-          <input type="search" name="search" placeholder="Найти...">
-          <input type="hidden" name="ip" value="10.54.42.198">
-          <input type="hidden" name="account" value="OPEN.RU\scherbakov_aa">
-          <input type="hidden" name="pc" value="iMac-design.open.ru">
-          <input class="page-header__search-btn" type="submit" name="find" value="Найти">
-        </form>
-
-        <nav class="user-menu nav-line">
-          <p class="user-menu__name">Константин</p>
-          <a class="user-menu__link" href="#">
-            <img class="user-menu__img" src="img/icon-userX2.jpg" width="40" height="40" alt="Пользователь">
-          </a>
-        </nav>
-
-      </div>
-    </header>
-
-    <main class="page-main">
-      <section class="partners content">
-          <h1 class="partners-title">наши партнёры</h1>
-  
-          <ul class="partners__list">
-            <li class="partners__item">
-              <a class="partners__logo" href="#">
-                <img class="partners__logo-img" src="img/company/henkel-logo.svg" width="117" height="64" alt="Компания Henkel">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link show" href="#" id="navbarDropdownMenuLink" role="button">
+                Курсы
               </a>
+              <ul class="dropdown-menu show" id="menuShow" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="#">Профессиональная вёрстка сайтов</a></li>
+                <li><a class="dropdown-item" href="#">Адаптивная вёрстка и автоматизация</a></li>
+                <li><a class="dropdown-item" href="#">Профессиональная разработка веб-интерфейсов</a></li>
+              </ul>
             </li>
-            <li class="partners__item">
-              <a class="partners__logo" href="#">
-                <img class="partners__logo-img" src="img/company/john-logo.svg" width="183" height="34" alt="Компания Jhohn Deere">
+            <li class="nav-item dropdown">
+              <a class="nav-link show" href="#" id="navbarDropdownMenuLink" role="button" aria-expanded="false">
+                Професии
               </a>
+              <ul class="dropdown-menu show" id="menuShow" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="#">Фронтенд-разработчик</a></li>
+                <li><a class="dropdown-item" href="#">React-разработчик</a></li>
+              </ul>
             </li>
-            <li class="partners__item">
-              <a class="partners__logo" href="#">
-                <img class="partners__logo-img" src="img/company/McDonalds-logo.svg" width="99" height="74" alt="Компания McDonals">
+            <li class="nav-item dropdown">
+              <a class="nav-link show" href="#" id="navbarDropdownMenuLink" role="button" aria-expanded="false">
+                Интенсивы
               </a>
-            </li>
-            <li class="partners__item">
-              <a class="partners__logo" href="#">
-                <img class="partners__logo-img" src="img/company/ikea-logo.svg" width="175" height="70" alt="Компания Ikea">
-              </a>
-            </li>
-            <li class="partners__item">
-              <a class="partners__logo" href="#">
-                <img class="partners__logo-img" src="img/company/reebok-logo.svg" width="187" height="38" alt="Компания Reebok">
-              </a>
-            </li>
-            <li class="partners__item">
-              <a class="partners__logo" href="#">
-                <img class="partners__logo-img" src="img/company/nike-logo.svg" width="143" height="74"  alt="Компания Nike">
-              </a>
-            </li>
-            <li class="partners__item">
-              <a class="partners__logo" href="#">
-                <img class="partners__logo-img" src="img/company/cate-logo.svg" width="196" height="30" alt="Компания Caterpilar">
-              </a>
+              <ul class="dropdown-menu show" id="menuShow" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="#">Анимация для фронтендеров</a></li>
+                <li><a class="dropdown-item" href="#">Вёрстка email-рассылок</a></li>
+                <li><a class="dropdown-item" href="#">Vue.js для опытных разработчиков</a></li>
+              </ul>
             </li>
           </ul>
-      </section>
-    </main>
-  </body>
+          <div class="d-flex">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Регистрация</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Выйти</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+          <div class="container">
+            <div class="carousel-caption text-start">
+              <div class="carousel-content--wrapper">
+                <div class="carousel-text">
+                  <h1>Адаптивность</h1>
+                  <p class="carousel-text--size">Чтобы сделать хороший адаптивный сайт, нужно понимать много нюансов: вьюпорт, медиавыражения, адаптивные картинки и другое.</p>
+                </div>  
+                <p><img class="carousel-img" src="img/adapt.jpg" width="250" alt="Адаптивность"></p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+          <div class="container">
+            <div class="carousel-caption text-start">
+              <div class="carousel-content--wrapper">
+                <div class="carousel-text">
+                  <h1>Качество фоновых изображений</h1>
+                  <p class="carousel-text--size">Цель каждого дизайнера и разработчика убедиться, что изображения не выглядят размытыми и плохо масштабированными.</p>
+                </div>  
+                <p><img class="carousel-img" src="img/macbook-bg-all.jpg" width="250" alt="Адаптивность"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+          <div class="container">
+            <div class="carousel-caption text-start">
+
+              <div class="carousel-content--wrapper">
+                <div class="carousel-text">
+                  <h1>Навигация</h1>
+                  <p class="carousel-text--size">Несмотря на то что сегодня три полоски у левой верхней границы чаще всего представляют собой навигационную кнопку, 
+                    многие пользователи до сих пор трудно ориентируются в меню, особенно когда дело доходит до сайтов со сложной структурой.</p>
+                </div>  
+                <p><img class="carousel-img" src="img/unnamed.jpg" width="250" alt="Адаптивность"></p>
+              </div>
+
+            </div>
+          </div>
+        </div>  
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Pnous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <div class="container-lg marketing">
+      <div class="row featurette">
+        <div class="col-md-8">
+          <h3 class="featurette-heading">Адаптивная вёрстка</h3>
+          <hr class="featurette-divider">
+          <p class="lead"><strong>В чём разница между резиновой, адаптивной и отзывчивой вёрсткой?</strong> — спрашивают наши зрители Екатерина и Константин — как правильно их применять?
+             Давайте разберёмся в отличиях подходов и попробуем сформулировать один общий вместо трёх.</p>
+          <p class="lead">Когда мобильного веба не было даже в самых смелых фантазиях, весь интернет был на десктопных компьютерах с небольшими экранами.
+             Оптимизирован для разрешения 1024 на 768 и браузера Internet Explorer 5! — гордо писали тогда на сайтах. 
+             Но прошло время, экраны подросли и пришлось к этому как-то подстраиваться. 
+             Сначала это были просто резиновые таблицы: колонки по 25%, содержимое 50%, а в отдельной строке colspan=3 и распорка для минимальной ширины. 
+             Надеюсь, вы не поняли о чём я сечас говорил.</p>
+          <p class="lead">Резиновая вёрстка — это когда вы задаёте всему макету и отдельным его частям не фиксированную ширину, а эластичную — в процентах. 
+             За исключением минимальной и максимальной ширины. Высоту в вебе в принципе не принято задавать — обычно она подстраивается под содержимое. 
+             Фикс или резина? — спрашивали верстальщики 2000-х про макет и втайне надеялись на второе, поинтереснее. 
+             Сейчас сложно представить, но когда-то это было прорывной идеей, которая усложнила вёрстку, но сделала первый шаг в правильном пути.</p>   
+          <div class="blockquote--wrapper">   
+            <blockquote class="blockquote">
+              <em><p>Фикс или резина? — спрашивали верстальщики 2000-х про макет и втайне надеялись на второе, поинтереснее.</p></em>
+              <em><p>Если у вас эластичные флоаты, флексы… да хоть гриды! — это всё равно резиновая вёрстка.</p></em>
+            </blockquote>
+          </div>       
+        </div>
+        <div class="col-md-4">
+          <div class="news--wrapper">
+            <h5 class="news--title">Популярное</h5>
+            <div class="news--list">
+              <div class="news--item">
+                <p class="news--picture">
+                  <img src="img/5.jpeg" alt="Фото" class="news--image">
+                </p>
+                <p class="news--text"><a href="https://htmlacademy.ru/blog/boost/frontend/css-you-can-get-excited-about-in-2015"><span class="news--text-title">Возможности CSS, которые вам понравятся в 2015</span><br><time class="text-muted">20 марта 2021</time></a></p>
+              </div>
+              <div class="news--item">
+                <p class="news--picture">
+                  <img src="img/3.jpeg" alt="Фото" class="news--image">
+                </p>
+                <p class="news--text"><a href="https://htmlacademy.ru/blog/boost/frontend/10-responsive-design-problems-and-fixes"><span class="news--text-title">Десять проблем адаптивного дизайна и их решения</span><br><time class="text-muted">20 марта 2021</time></a></p>
+              </div>
+              <div class="news--item">
+                <p class="news--picture">
+                  <img src="img/4.png" alt="Фото" class="news--image">
+                </p>
+                <p class="news--text"><a href="https://htmlacademy.ru/blog/boost/frontend/the-problem-with-css-pre-processors"><span class="news--text-title">Проблема с CSS-препроцессорами</span><br><time class="text-muted">20 марта 2021</time></a></p>
+              </div>
+              <div class="news--item">
+                <p class="news--picture">
+                  <img src="img/1.jpeg" alt="Фото" class="news--image">
+                </p>
+                <p class="news--text"><a href="https://htmlacademy.ru/blog/boost/frontend/about-normalize-css"><span class="news--text-title">О normalize.css</span><br><time class="text-muted">20 марта 2021</time></a></p>
+              </div>
+              <div class="news--item">
+                <p class="news--picture">
+                  <img src="img/2.jpeg" alt="Фото" class="news--image">
+                </p>
+                <p class="news--text"><a href="https://htmlacademy.ru/blog/boost/frontend/useful-commands-for-working-with-nodejs"><span class="news--text-title">Полезные команды для работы с Node.js</span><br><time class="text-muted">20 марта 2021</time></a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="assets/dist/js/bootstrap.bundle.min.js"></script> 
+</body>
 </html>
